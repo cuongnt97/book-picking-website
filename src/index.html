@@ -1,0 +1,669 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>BookPress - Just another World</title>
+  <link rel="icon" href="/logo.png" type="image/svg+xml">
+
+</head>
+
+<body>
+  <a href="#" onclick="scrollToTop()" id="myBtn" class="scrolltop">
+    <ion-icon name="arrow-up-outline"></ion-icon>
+  </a>
+  <!-- header -->
+  <header id="header">
+    <div class="container ">
+      <div class="header d-flex justify-content-between">
+        <div class="header__log">
+          <a href="./index.html" class="header__logo--img">
+            <img class="logo" style="width: 150px" src="./assets/logo.png" alt="" />
+          </a>
+        </div>
+        <div id="header__nav">
+          <ul>
+            <li><a class="active" href="./index.html">Home</a></li>
+            <li><a href="./about.html">About</a></li>
+            <li><a href="./contact.html">Contact</a></li>
+            <li><a href="./books-store.html">Books Store</a></li>
+          </ul>
+        </div>
+        
+        <div class="header__myacc">
+          <ion-icon name="cart-outline" id="js-cart-modal"></ion-icon>
+          <p class="nav__mount"><span>0</span></p>
+          <a class="my__acc btn" href="./myacc.html">My account</a>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <!--  -->
+  <section id="homepage">
+    <div class="homepage--slide">
+      <div class="homepage--slide-1 mySlide appear">
+      </div>
+      <div class="homepage--slide-2 mySlide">
+      </div>
+      <div class="homepage--slide-3 mySlide">
+      </div>
+    </div>
+    <div class="container">
+      <div id="content">
+        <div id="description">
+          <h1>
+            <span class="special-text">BookPress</span> is a smart choice for
+            book selling landing page.
+          </h1>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit.
+            Blanditiis iste eum, magnam quibusdam vel, similique sunt
+            excepturi delectus ipsa id odio odit consectetur ducimus
+            voluptatibus? Nobis fugiat ipsa dignissimos consectetur.
+          </p>
+          <button class="btn btn-dark">browse shop</button>
+          <button class="btn btn-light">learn more</button>
+        </div>
+        <div id="form">
+          <div id="contact-form">
+            <h3>Subscribe to be able to buy the latest books</h3>
+            <div class="col1">
+              <span class="text-muted">All fields are required</span>
+              <input type="text" name="FNAME" placeholder="First name" required />
+              <input type="text" name="LNAME" placeholder="Last name" required />
+              <input type="text" name="EMAIL" placeholder="Email address" required />
+              <input type="text" name="MMERGE3" placeholder="Phone number" required />
+            </div>
+            <div class="col2">
+              <input type="submit" class="btn btn-orange" value="Sign up Now" />
+              <p class="text-muted">
+                "Your Information will not be shared with anyone (<a href="#">See Privacy policy</a>)"
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="book-info">
+    <div class="container">
+      <div class="book-info__header">
+        <h2>books features</h2>
+        <p>
+          Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta,
+          error neque! Eum dolorem exercitationem voluptatum, earum rerum
+          facilis magnam repellat ut ab quia incidunt? Maxime repudiandae
+          ratione temporibus iure libero!
+        </p>
+      </div>
+      <div class="book-info">
+        <div class="book-info__content">
+          <div class="content-book">
+            <div class="content-icon">
+              <ion-icon name="rocket-outline"></ion-icon>
+            </div>
+            <div>
+              <h3>Create art and media</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                illo officiis voluptatibus repellat, neque culpa! Consequatur
+                laudantium placeat quibusdam, doloremque eum modi magni
+                eveniet suscipit dolore sunt quae? Error, incidunt.
+              </p>
+            </div>
+          </div>
+          <div class="content-book">
+            <div class="content-icon">
+              <ion-icon name="wallet-outline"></ion-icon>
+            </div>
+            <div>
+              <h3>Create art and media</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                illo officiis voluptatibus repellat, neque culpa! Consequatur
+                laudantium placeat quibusdam, doloremque eum modi magni
+                eveniet suscipit dolore sunt quae? Error, incidunt.
+              </p>
+            </div>
+          </div>
+          <div class="content-book">
+            <div class="content-icon">
+              <ion-icon name="bookmarks-outline"></ion-icon>
+            </div>
+            <div>
+              <h3>Create art and media</h3>
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ullam
+                illo officiis voluptatibus repellat, neque culpa! Consequatur
+                laudantium placeat quibusdam, doloremque eum modi magni
+                eveniet suscipit dolore sunt quae? Error, incidunt.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="book-info__img">
+          <img src="./assets/img-home/book-image-1.png" />
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="books">
+    <div class="container">
+      <div class="book_wrapper">
+        <div class="books">
+          <!--------------------------------book----------------------------->
+          <div class="book-item">
+            <div class="book-img">
+              <div class="label-sales">
+                <a href="#"><span>Sale!</span></a>
+              </div>
+              <img src="./assets/img-home/product-7-1.jpg" />
+            </div>
+            <div class="book-description">
+              <a href="#">
+                <h3>forever is a long time to be wrong</h3>
+              </a>
+              <span class="book-rate">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </span>
+              <p><s>$27.00</s> $22.00</p>
+              <ul>
+                <li>
+                  <strong>Publisher</strong>
+                  <span>Jononi Publication</span>
+                </li>
+                <li>
+                  <strong>Publish Date</strong>
+                  <span>October 18, 2016</span>
+                </li>
+                <li>
+                  <strong>ISBN-10</strong>
+                  <span>0236547851</span>
+                </li>
+                <li>
+                  <strong>ISBN-13</strong>
+                  <span>2547810321560</span>
+                </li>
+              </ul>
+              <p>
+                There are many sites where you can order your favorite book quote
+                printed on a poster, mug, t-shirt, and tens of other
+                products.Below you’ll find our recommendations – the sites that
+                offer high-quality book quote designs on a large selection of
+                items.
+              </p>
+              <div class="book-btn">
+                <button class="btn btn-dark">Read More</button>
+                <button class="btn btn-orange">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-----------------------------------------end of book---------------------->
+          <!--------------------------------book----------------------------->
+          <div class="book-item">
+            <div class="book-img">
+              <div class="label-sales">
+                <a href="#"><span>Sale!</span></a>
+              </div>
+              <img src="./assets/img-book/glitterings stars by amver davis.png" />
+            </div>
+            <div class="book-description">
+              <a href="#">
+                <h3>forever is a long time to be wrong</h3>
+              </a>
+              <span class="book-rate">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </span>
+              <p><s>$27.00</s> $22.00</p>
+              <ul>
+                <li>
+                  <strong>Publisher</strong>
+                  <span>Jononi Publication</span>
+                </li>
+                <li>
+                  <strong>Publish Date</strong>
+                  <span>October 18, 2016</span>
+                </li>
+                <li>
+                  <strong>ISBN-10</strong>
+                  <span>0236547851</span>
+                </li>
+                <li>
+                  <strong>ISBN-13</strong>
+                  <span>2547810321560</span>
+                </li>
+              </ul>
+              <p>
+                There are many sites where you can order your favorite book quote
+                printed on a poster, mug, t-shirt, and tens of other
+                products.Below you’ll find our recommendations – the sites that
+                offer high-quality book quote designs on a large selection of
+                items.
+              </p>
+              <div class="book-btn">
+                <button class="btn btn-dark">Read More</button>
+                <button class="btn btn-orange">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-----------------------------------------end of book---------------------->
+          <!--------------------------------book----------------------------->
+          <div class="book-item">
+            <div class="book-img">
+              <div class="label-sales">
+                <a href="#"><span>Sale!</span></a>
+              </div>
+              <img src="./assets/img-book/living the life you always.jpg" />
+            </div>
+            <div class="book-description">
+              <a href="#">
+                <h3>forever is a long time to be wrong</h3>
+              </a>
+              <span class="book-rate">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </span>
+              <p><s>$27.00</s> $22.00</p>
+              <ul>
+                <li>
+                  <strong>Publisher</strong>
+                  <span>Jononi Publication</span>
+                </li>
+                <li>
+                  <strong>Publish Date</strong>
+                  <span>October 18, 2016</span>
+                </li>
+                <li>
+                  <strong>ISBN-10</strong>
+                  <span>0236547851</span>
+                </li>
+                <li>
+                  <strong>ISBN-13</strong>
+                  <span>2547810321560</span>
+                </li>
+              </ul>
+              <p>
+                There are many sites where you can order your favorite book quote
+                printed on a poster, mug, t-shirt, and tens of other
+                products.Below you’ll find our recommendations – the sites that
+                offer high-quality book quote designs on a large selection of
+                items.
+              </p>
+              <div class="book-btn">
+                <button class="btn btn-dark">Read More</button>
+                <button class="btn btn-orange">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-----------------------------------------end of book---------------------->
+          <!--------------------------------book----------------------------->
+          <div class="book-item">
+            <div class="book-img">
+              <div class="label-sales">
+                <a href="#"><span>Sale!</span></a>
+              </div>
+              <img src="./assets/img-book/the waterfall story.png" />
+            </div>
+            <div class="book-description">
+              <a href="#">
+                <h3>forever is a long time to be wrong</h3>
+              </a>
+              <span class="book-rate">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </span>
+              <p><s>$27.00</s> $22.00</p>
+              <ul>
+                <li>
+                  <strong>Publisher</strong>
+                  <span>Jononi Publication</span>
+                </li>
+                <li>
+                  <strong>Publish Date</strong>
+                  <span>October 18, 2016</span>
+                </li>
+                <li>
+                  <strong>ISBN-10</strong>
+                  <span>0236547851</span>
+                </li>
+                <li>
+                  <strong>ISBN-13</strong>
+                  <span>2547810321560</span>
+                </li>
+              </ul>
+              <p>
+                There are many sites where you can order your favorite book quote
+                printed on a poster, mug, t-shirt, and tens of other
+                products.Below you’ll find our recommendations – the sites that
+                offer high-quality book quote designs on a large selection of
+                items.
+              </p>
+              <div class="book-btn">
+                <button class="btn btn-dark">Read More</button>
+                <button class="btn btn-orange">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-----------------------------------------end of book---------------------->
+          <!--------------------------------book----------------------------->
+          <div class="book-item">
+            <div class="book-img">
+              <div class="label-sales">
+                <a href="#"><span>Sale!</span></a>
+              </div>
+              <img src="./assets/img-book/one year on a bike.png" />
+            </div>
+            <div class="book-description">
+              <a href="#">
+                <h3>forever is a long time to be wrong</h3>
+              </a>
+              <span class="book-rate">
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+                <ion-icon name="star-outline"></ion-icon>
+              </span>
+              <p><s>$27.00</s> $22.00</p>
+              <ul>
+                <li>
+                  <strong>Publisher</strong>
+                  <span>Jononi Publication</span>
+                </li>
+                <li>
+                  <strong>Publish Date</strong>
+                  <span>October 18, 2016</span>
+                </li>
+                <li>
+                  <strong>ISBN-10</strong>
+                  <span>0236547851</span>
+                </li>
+                <li>
+                  <strong>ISBN-13</strong>
+                  <span>2547810321560</span>
+                </li>
+              </ul>
+              <p>
+                There are many sites where you can order your favorite book quote
+                printed on a poster, mug, t-shirt, and tens of other
+                products.Below you’ll find our recommendations – the sites that
+                offer high-quality book quote designs on a large selection of
+                items.
+              </p>
+              <div class="book-btn">
+                <button class="btn btn-dark">Read More</button>
+                <button class="btn btn-orange">Add to cart</button>
+              </div>
+            </div>
+          </div>
+          <!-----------------------------------------end of book---------------------->
+        </div>
+      </div>
+    </div>
+    <a id="prev">❮</a>
+    <a id="next">❯</a>
+  </section>
+  <section id="counterup">
+    <div class="container">
+      <div class="counterup">
+        <div class="counter--content">
+          <span>
+            <h4 id="subscriber">92500</h4>
+            <p>Subscriber</p>
+          </span>
+        </div>
+        <div class="counter--content">
+          <span>
+            <h4 id="download">200</h4>
+            <p>Free Download</p>
+          </span>
+        </div>
+        <div class="counter--content">
+          <span>
+            <h4 id="product">5000</h4>
+            <p>Product List</p>
+          </span>
+        </div>
+        <div class="counter--content">
+          <span>
+            <h4 id="ebook">10</h4>
+            <p>Ebook</p>
+          </span>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="testimonial">
+    <div class="container">
+      <div class="testimonial">
+        <div class="feedback">
+          <h1>What Readers Are Saying</h1>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            enim quos nam fuga? Officia vitae eum incidunt quo, pariatur
+            impedit commodi, modi recusandae ipsum dolor dolore molestiae?
+            Deleniti, laboriosam necessitatibus?
+          </p>
+        </div>
+        <!-----------------------------feedback------------------------------------------>
+        <div class="feedback-detail">
+          <div class="author">
+            <img src="./assets/img-home/testimonial.png" />
+          </div>
+          <h3>Andrew Rasal.</h3>
+          <h4>Partner, Book-press</h4>
+          <p>
+            These days are all Happy and Free these days are all share them
+            with me oh baby the Brady Bunch the Brady Bunch that's the way we
+            all became the Brady Bunch the no one you see is smarter than he
+            so joinus Filpper Flipper faster.
+          </p>
+        </div>
+        <!---------------------------end of feedback-------------------------------------->
+        <!-- ---------------------------feedback------------------------------------------>
+        <div class="feedback-detail">
+          <div class="author">
+            <img src="./assets/img-home/avtauthor.jpeg" />
+          </div>
+          <h3>Hasan Mahamud.</h3>
+          <h4>Partner, Book-press</h4>
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita
+            enim quos nam fuga? Officia vitae eum incidunt quo, pariatur
+            impedit commodi, modi recusandae ipsum dolor dolore molestiae?
+            Deleniti, laboriosam necessitatibus?
+          </p>
+        </div>
+        <!---------------------------end of feedback-------------------------------------->
+        <!-----------------------------feedback------------------------------------------>
+        <div class="feedback-detail">
+          <div class="author">
+            <img src="./assets/img-home/testimonial3.png" />
+          </div>
+          <h3>Samia Jasmine.</h3>
+          <h4>Partner, Book-press</h4>
+          <p>
+            These days are all Happy and Free these days are all share them
+            with me oh baby the Brady Bunch the Brady Bunch that's the way we
+            all became the Brady Bunch the no one you see is smarter than he
+            so joinus Filpper Flipper faster.
+          </p>
+        </div>
+        <!---------------------------end of feedback------------------------------------ -->
+        <div class="owl-dots">
+          <button class="owl-dot active">
+            <span class="dot" onclick="currentSlide(1)"></span>
+          </button>
+          <button class="owl-dot">
+            <span class="dot" onclick="currentSlide(2)"></span>
+          </button>
+          <button class="owl-dot">
+            <span class="dot" onclick="currentSlide(3)"></span>
+          </button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="play-video">
+    <div class="active-video">
+      <iframe width="660" height="415" src="https://www.youtube.com/embed/y881t8ilMyc" frameborder="0"
+        allowfullscreen></iframe>
+      </iframe>
+      <span class="btn-close">x</span>
+    </div>
+    <div class="play-img"></div>
+    <div class="play-video">
+      <span class="play">
+        <a class="btn-play"><ion-icon name="play"></ion-icon></ion-icon></a>
+        <h4>A video message from author</h4>
+      </span>
+    </div>
+  </section>
+
+
+  <section id="blog">
+    <div class="container">
+      <div class="blog">
+        <div class="blog-header">
+          <h2>Our Blogs & Latest News</h2>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing, consectetur
+            adipisicing elit. Ut quos cupidiate, nemo debitis, explicabo
+            voluptas.
+          </p>
+        </div>
+        <div class="blog-post">
+          <div class="blog-item">
+            <div class="blog-item__img">
+              <img src="./assets/img-home/blog-post-1-360x225.jpg" />
+            </div>
+            <div class="blog-item__content">
+              <div class="blog-author">
+                <span><ion-icon name="person-outline"></ion-icon>bookpress_demo</span>
+                <span><ion-icon name="calendar-outline"></ion-icon>09th January
+                  2017</span>
+              </div>
+              <div class="blog-item__post">
+                <h3>Why you don't know would make a great book</h3>
+                <p>
+                  Nulla tincidunt euismod mi, vitae posuere ante interdum sit
+                  amet. Vestibulum quis posuere ipsum. Aliquam bibendum
+                  porttior magna, sit amet...
+                </p>
+              </div>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-item__img">
+              <img src="./assets/img-home/blog-post2-1-360x225.jpg" />
+            </div>
+            <div class="blog-item__content">
+              <div class="blog-author">
+                <span><ion-icon name="person-outline"></ion-icon>bookpress_demo</span>
+                <span><ion-icon name="calendar-outline"></ion-icon>09th January
+                  2017</span>
+              </div>
+              <div class="blog-item__post">
+                <h3>Why you don't know would make a great book</h3>
+                <p>
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit. Necessitatibus laboriosam placeat eos a
+                  recusandae magni minus consectetur optio deleniti impedit eius illum molestiae, modi dolor, ab aperiam
+                  vel fuga inventore.
+                </p>
+              </div>
+              <a href="#">Read More</a>
+            </div>
+          </div>
+          <div class="blog-item">
+            <div class="blog-item__img">
+              <img src="./assets/img-home/blog-post6-1-360x225.jpg" />
+            </div>
+            <div class="blog-item__content">
+              <div class="blog-author">
+                <span><ion-icon name="person-outline"></ion-icon>bookpress_demo</span>
+                <span><ion-icon name="calendar-outline"></ion-icon>09th January
+                  2017</span>
+              </div>
+              <div class="blog-item__post">
+                <h3>Why you don't know would make a great book</h3>
+                <p>
+                  Nulla tincidunt euismod mi, vitae posuere ante interdum sit
+                  amet. Vestibulum quis posuere ipsum. Aliquam bibendum
+                  porttior magna, sit amet...
+                </p>
+              </div>
+              <span class="blog-link"><a href="#">Read More</a></span>
+            </div>
+          </div>
+        </div>
+        <div class="blog-footer">
+          <div class="view-more">
+            <a href="#">View more</a>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+  <section id="footer">
+    <div class="container">
+      <div class="footer">
+        <div class="icon-social">
+          <span><ion-icon name="logo-facebook"></ion-icon></span>
+          <span><ion-icon name="logo-twitter"></ion-icon></span>
+          <span><ion-icon name="logo-google"></ion-icon></span>
+          <span><ion-icon name="logo-linkedin"></ion-icon></span>
+          <span><ion-icon name="logo-rss"></ion-icon></span>
+        </div>
+        <div class="copyright">
+          <span>Copyright @ 2016 - 2022. Made with love by
+            <a href="#">CuongNT</a></span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- -----------------Modal Cart----------- -->
+  <div class="modal-wrapper js-modal-wrapper">
+
+    <div class="modal-cart js-modal-cart">
+      <div class="modal-cart__header">
+        <h5>Cart</h5>
+        <ion-icon id="cart-icon" name="close-outline"></ion-icon>
+      </div>
+      <div class="modal-cart__container">
+        <div class="modal-cart__content">
+          <div class="modal-cart__total">
+            <p> <strong>Subtotal:</strong> <span>$<span class="modal-cart__price">0</span></span></p>
+          </div>
+          <div class="modal-cart__btn">
+            <button class="modal-cart__btn--view">View cart</button>
+            <button class="modal-cart__btn--check">Check out</button>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+  <script type="module" src="js/index.js"></script>
+  <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+</body>
+
+</html>

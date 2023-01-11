@@ -1,0 +1,23 @@
+{
+  "name": "book-picking-website",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "preview": "vite preview"
+  },
+  "devDependencies": {
+    "vite": "^4.0.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.2.3",
+    "firebase": "^9.15.0",
+    "googleapis": "^110.0.0",
+    "ionicons": "^6.0.4",
+    "jquery": "^3.6.3",
+    "owl.carousel2": "^2.2.2",
+    "swiper": "^8.4.5"
+  }
+}
